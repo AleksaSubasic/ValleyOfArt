@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap/node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <title>VoA - Shop</title>
+</head>
+<body>
+    <header>
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg my-nav-class bg-white container">
+            <div class="container-fluid">
+                <div class="test-square"></div>
+                <a class="navbar-brand my-text-color" href="#">Valley of Art</a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="#">Shop</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="diy-page.html">DIY</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="about-page.html">About</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="my-mt">
+      <!-- Top selling art block -->
+      <div class="container">
+        <div class="text-center text-white bg-green-cyan my-5 py-2">
+          <h2 class="text-capitalize">Top selling art</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-1.jpg" alt="Art_1" data-bs-toggle="modal" data-bs-target="#artModal_1"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Neand</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Mike</h6>
+                <p class="card-text text-black">Familiar and at the same time mysterious, inspired by parietal art from the dawn of our ancestors.</p>
+
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-2.jpg" alt="Art_2" data-bs-toggle="modal" data-bs-target="#artModal_2"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Snack.</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Alice</h6>
+                <p class="card-text text-black">If you can&apos;t have a midnight snack why do we have a light in the fridge? Go eat &apos;em snacks now!</p>
+
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-3.jpg" alt="Art_3" data-bs-toggle="modal" data-bs-target="#artModal_3"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Infinity thoughts</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Mike</h6>
+                <p class="card-text text-black">An infinite number of possibilities, boundless, more significant than all of us. To infinity and beyond!</p>
+
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-4.jpg" alt="Art_4" data-bs-toggle="modal" data-bs-target="#artModal_4"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Different apple</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Geek_64</h6>
+                <p class="card-text text-black">&quot;On January 24th, Apple Computer will introduce Macintosh. And you&apos;ll see why 1984 won&apos;t be like 1984.&quot;</p>
+
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending this week block -->
+      <div class="container">
+        <div class="text-center text-white bg-green-cyan my-5 py-2">
+          <h2 class="text-capitalize">Trending this week</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-5.jpg" alt="Art_5" data-bs-toggle="modal" data-bs-target="#artModal_5"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Ripples in light</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Geek_64</h6>
+                <p class="card-text text-black">Capillary waves are common in nature and are often referred to as ripples. This could be the new wave of light.</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-6.jpg" alt="Art_6" data-bs-toggle="modal" data-bs-target="#artModal_6"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">DNA</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Carlos</h6>
+                <p class="card-text text-black">Carrying the same and different types of legacy in our bodies is a truly amazing thing that could happen to us.</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-7.jpg" alt="Art_7" data-bs-toggle="modal" data-bs-target="#artModal_7"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Wave.</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Alice</h6>
+                <p class="card-text text-black">Inspired by the combination of 90s gangster rap and chill vibes of summer waves, guess it was a good day after all.</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-8.jpg" alt="Art_8" data-bs-toggle="modal" data-bs-target="#artModal_8"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Chimei-tekina hana</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Hiroyuki</h6>
+                <p class="card-text text-black">Hiroyuki is mostly known for his abstract arts, so we are surprised to see something new like this!</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fresh new art block -->
+      <div class="container">
+        <div class="text-center text-white bg-green-cyan my-5 py-2 lower-margin">
+          <h2 class="text-capitalize">Fresh new art</h2>
+        </div>
+
+        <div class="row ">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-9.jpg" alt="Art_9" data-bs-toggle="modal" data-bs-target="#artModal_9"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+              
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Sushi</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Hiroyuki</h6>
+                <p class="card-text text-black">The most popular dish in Japan comes alive in this unique abstract art. Min&apos;na de o sushi o tabeyou!</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-10.jpg" alt="Art_10" data-bs-toggle="modal" data-bs-target="#artModal_10"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Hero</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Geek_64</h6>
+                <p class="card-text text-black">A person who is admired for their courage, outstanding achievements, or noble qualities. Be a hero.</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-11.jpg" alt="Art_11" data-bs-toggle="modal" data-bs-target="#artModal_11"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Two and a half line</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Carlos</h6>
+                <p class="card-text text-black">Sometimes simplest art could make a big difference and mean a lot more than just two strikes of a line, and a half line.</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm">
+              <div class="hover-for-more">
+                <img class="card-img-top" src="assets/img/A-12.jpg" alt="Art_12" data-bs-toggle="modal" data-bs-target="#artModal_12"/>
+                <h6 class="text-muted overlay-show-more text-center additional-information-block">click image for more</h6>
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-black text-capitalize">Love.</h5>
+                <h6 class="card-subtitle mb-2 text-muted">By: Alice</h6>
+                <p class="card-text text-black">Some people describe this as fireworks, others describe it as moments where nothing else matters around you.</p>
+                
+                <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
+                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
+                    <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Cart -->
+      <div class="container">
+        <div id="cart" class="bg-green-cyan d-flex justify-content-center align-items-center shadow" data-bs-toggle="modal" data-bs-target="#formModal">
+          <i class="fa-solid fa-cart-shopping fs-4 text-white text-center"></i>
+          <div id="cart-item-counter" class="bg-green-dark"></div>
+          <p class="text-white fw-bold">2</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-black" id="exampleModalLabel">Shopping cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com">
+              </div>
+              <div class="mb-3">
+                <label for="inputAddress" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="mb-3">
+                <label for="inputPhoneNumber" class="form-label">Phone number:</label>
+                <input type="number" class="form-control" id="inputPhoneNumber" placeholder="381xxx">
+              </div>
+              <div>
+                <h6>Items in cart:</h6>
+                <div class="added-items-block py-2 px-3 rounded-3">
+                  Sushi &dash; Hiroyuki<br/>
+                  Love &dash; Alice
+                </div>
+                <h5 class="text-center mt-3">Amount to pay&colon; 60&dollar;</h5>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Pay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Neand</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-1.jpg" alt="Art_1"/>
+            <p class="additional-information-block p-2 rounded-3">A global phenomenon, rock&sol;parietal art is found in many culturally diverse regions of the world. It has been produced in many contexts throughout human history.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Snack.</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-2.jpg" alt="Art_2"/>
+            <p class="additional-information-block p-2 rounded-3">&quot;What&apos;s your favorite snack?&quot;<br/>&quot;What&apos;s the best snack of all time?&quot;<br/>These are just a few questions that are not only difficult for most to answer (some would say, impossible), but also very highly opinionated, as well.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Infinity Thoughts</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-3.jpg" alt="Art_3"/>
+            <p class="additional-information-block p-2 rounded-3">There are infinite other versions of Earth that are slightly different from this one, you&apos;re not the only you there is.  This very moment is happening infinite times at the same time and at all other times somewhere in the universe.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Different Apple</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-4.jpg" alt="Art_4"/>
+            <p class="additional-information-block p-2 rounded-3">This art is a reference to the &quot;1984&quot; American television commercial that introduced the Apple Macintosh personal computer.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Ripples In Light</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-5.jpg" alt="Art_SVG_5"/>
+            <p class="additional-information-block p-2 rounded-3">A capillary wave is a wave traveling along the phase boundary of a fluid, whose dynamics and phase velocity are dominated by the effects of surface tension.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: DNA</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-6.jpg" alt="Art_6"/>
+            <p class="additional-information-block p-2 rounded-3">DNA contains the instructions needed for an organism to develop, survive and reproduce.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Wave.</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-7.jpg" alt="Art_7"/>
+            <p class="additional-information-block p-2 rounded-3">&quot;It Was A Good Day.&quot; &dash; Ice Cube &apos;92</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Chimei-Tekina Hana</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-8.jpg" alt="Art_8"/>
+            <p class="additional-information-block p-2 rounded-3">Cherry blossoms are a symbolic flower of the spring, a time of renewal, and the fleeting nature of life.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Sushi</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-9.jpg" alt="Art_9"/>
+            <p class="additional-information-block p-2 rounded-3">Abstract art uses visual language of shape, form, color and line to create a composition which may exist with a degree of independence from visual references in the world.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Hero</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-10.jpg" alt="Art_10"/>
+            <p class="additional-information-block p-2 rounded-3">In mythology and folklore a person of superhuman qualities and often semi-divine origin, in particular one whose exploits were the subject of ancient Greek myths.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Two And A Half Line</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-11.jpg" alt="Art_11"/>
+            <p class="additional-information-block p-2 rounded-3">Abstract art uses visual language of shape, form, color and line to create a composition which may exist with a degree of independence from visual references in the world.</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="artModal_12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title text-black fw-bold" id="exampleModalLabel">Art: Love</h5>
+          </div>
+          <div class="modal-body text-center">
+            <img class="modal-image mb-3" src="assets/img/A-12.jpg" alt="Art_12"/>
+            <p class="additional-information-block p-2 rounded-3">&quot;The act of caring and giving to someone else. Having someone&apos;s best interest and wellbeing as a priority in your life. To truly love is a very selfless act.&quot;</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="toastNotification" class="toast align-items-center shadow-sm" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center justify-content-between bg-green-cyan rounded-4">
+          <div class="toast-body text-white">
+            Successfuly added to cart!
+          </div>
+          <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-green-cyan text-center mt-5">
+        <div class="container p-4 pb-0">
+          <!-- Social -->
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1 btn-outline-dark-green" target="_blank" href="https://www.twitter.com/" role="button">
+              <i class="fab fa-twitter text-white"></i>
+            </a>
+    
+            <a class="btn btn-outline-light btn-floating m-1 btn-outline-dark-green" target="_blank" href="https://www.facebook.com/" role="button">
+              <i class="fab fa-facebook text-white"></i>
+            </a>
+    
+            <a class="btn btn-outline-light btn-floating m-1 btn-outline-dark-green" target="_blank" href="https://www.instagram.com/" role="button">
+              <i class="fab fa-instagram text-white"></i>
+            </a>
+    
+            <a class="btn btn-outline-light btn-floating m-1 btn-outline-dark-green" target="_blank" href="https://www.linkedin.com/" role="button">
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+    
+            <a class="btn btn-outline-light btn-floating m-1 btn-outline-dark-green" target="_blank" href="https://www.github.com/" role="button">
+              <i class="fab fa-github text-white"></i>
+            </a>
+          </section>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3 copyright bg-green-dark">
+          <h5>Copyright &copy; Aleksa Subasic 98&sol;20</h5>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap js & popper js -->
+    <script src="assets/bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/myScript.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/03f9b2fde2.js" crossorigin="anonymous"></script>
+</body>
+</html>
