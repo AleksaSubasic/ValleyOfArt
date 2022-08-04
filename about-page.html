@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- Nav -->
-        <nav class="navbar navbar-expand-lg my-nav-class bg-white container">
+        <nav class="fixed-top navbar navbar-expand-lg my-nav-class bg-white container">
             <div class="container-fluid">
                 <div class="test-square"></div>
                 <a class="navbar-brand my-text-color" href="#">Valley of Art</a>
@@ -26,10 +26,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <!-- Links -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="index.html">Home</a> </li>
-                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="shop-page.html">Shop</a> </li>
-                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="diy-page.html">DIY</a> </li>
-                        <li class="nav-item"> <a class="nav-link my-nav-link my-text-color" href="#">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-text-color" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-text-color" href="shop-page.html">Shop</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-text-color" href="diy-page.html">DIY</a> </li>
+                        <li class="nav-item"> <a class="nav-link my-text-color my-active-link" href="#">About</a> </li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,18 @@
       <!-- Background image -->
       <div id="about-background-image">
         <div id="about-bckg-svg" class="d-flex justify-content-center align-items-center">
-          <h1 class="h1 text-white text-capitalize">About us!</h1>
+          <div class="container">
+            <figure class="text-center text-white">
+              <blockquote class="blockquote d-flex justify-content-center">
+                <i class="fas fa-quote-left fs-4 mx-2"></i>
+                <h4>Every child is an artist. The problem is how to remain an artist once they grow up.</h4>
+                <i class="fas fa-quote-right fs-4 mx-2"></i>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white fs-5">
+                <cite title="Source Title">Pablo Picasso</cite>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
@@ -54,29 +65,31 @@
       </div>
 
       <!-- Contact us form -->
-      <div id="form-block">
-        <h2 class="text-white text-center">Contact Us!</h2>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputName" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
-          </div>
-          <div class="mb-3">
-            <label for="inputEmail" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com">
-          </div>
-          <div class="mb-3">
-            <label for="inputAddress" class="form-label">Address:</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="mb-3">
-            <label for="inputPhoneNumber" class="form-label">Phone number:</label>
-            <input type="number" class="form-control" id="inputPhoneNumber" placeholder="381xxx">
-          </div>
-          <div class="mb-3 text-center">
-            <input type="button" class="btn w-50 fs-5 form-control text-white bg-green-cyan" value="Send!"/>
-          </div>
-        </form>
+      <div class="container">
+        <div id="form-block" class="w-75">
+          <h2 class="text-white text-center">Contact Us!</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com">
+            </div>
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Address:</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="mb-3">
+              <label for="inputPhoneNumber" class="form-label">Phone number:</label>
+              <input type="number" class="form-control" id="inputPhoneNumber" placeholder="381xxx">
+            </div>
+            <div class="mb-3 text-center">
+              <input type="button" class="btn w-50 fs-5 form-control text-white bg-green-cyan" value="Send!"/>
+            </div>
+          </form>
+        </div>
       </div>
 
     </main>
