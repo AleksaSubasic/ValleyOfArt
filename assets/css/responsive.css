@@ -33,7 +33,9 @@
     #cart{
         margin-top: 0px;
     }
-
+    #about-company .container h5{
+        width: 100% !important;
+    }
 }
 @media screen and (max-width: 600px) {
     .my-nav-class ul li a:hover:after{
