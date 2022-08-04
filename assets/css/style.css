@@ -83,13 +83,12 @@ body{
 }
 .my-nav-class{
     width: 90%;
-    position: absolute;
     top: 20px;
     left: 0;
     right: 0;
     transition: 0.4s;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    z-index: 2;
+    z-index: 3;
 }
 .my-nav-class ul li a{
   position: relative;
@@ -113,6 +112,10 @@ body{
 .navbar-collapse ul li a{
     margin-right: 15px;
 }
+.my-active-link{
+    color: var(--ocean-green) !important;
+}
+
 /* --- NAVIGATION BAR END --- */
 
 
@@ -254,12 +257,10 @@ body{
     border-radius: 20px;
 }
 #about-company .container h5{
-    /* width: 60%; */
     background-color: rgba(144, 193, 172, 0.2);
     border-radius: 10px;
 }
 #form-block{
-    width: 40%;
     margin: 50px auto;
     background-color: var(--tropical-rain-forest-v2);
     padding: 10px 20px;

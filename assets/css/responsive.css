@@ -33,7 +33,7 @@
     #cart{
         margin-top: 0px;
     }
-    #about-company .container h5{
+    #about-company .container h5, #form-block{
         width: 100% !important;
     }
 }
