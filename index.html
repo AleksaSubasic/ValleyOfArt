@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css"/>
-
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>VoA - Home</title>
 </head>
@@ -40,7 +40,7 @@
 
     <main>
       <!-- Carousel -->
-      <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade" data-bs-ride="false">
+      <div id="carouselExampleCaptions" class="carousel carousel slide carousel-fade" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" class="bg-white" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -48,35 +48,37 @@
         </div>
 
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/body-background.png" class="d-block" style="width: 100%; height: 100vh;" alt="Carousel_1">
+          <div class="carousel-item active d-flex justify-content-center align-items-center">
+            <img src="assets/img/carousel-1.jpg" class="d-block" alt="Carousel_1">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5 class="text-capitalize">Torii gate</h5>
+              <p>&dash; Traditional Japanese gate most commonly found at the entrance of or within a Shinto shrine. &dash;</p>
             </div>
           </div>
           <div class="carousel-item d-flex justify-content-center align-items-center">
-            <img src="assets/img/A-4.jpg" class="d-block" style="width: auto; height: 100vh;" alt="Carousel_2">
+            <img src="assets/img/carousel-2.jpg" class="d-block" alt="Carousel_2">
             <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5 class="text-capitalize">Think different</h5>
+              <p>&dash; Design is not just what it looks like and feels like. Design is how it works. &dash;</p>
             </div>
           </div>
           <div class="carousel-item d-flex justify-content-center align-items-center">
-            <img src="assets/img/A-3.jpg" class="d-block" style="width: auto; height: 100vh;" alt="Carousel_3">
+            <img src="assets/img/carousel-3.jpg" class="d-block" alt="Carousel_3">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5 class="text-capitalize">Eco - wave</h5>
+              <p>&dash; We are not above nature, we are a part of nature. &dash;</p>
             </div>
           </div>
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <i class="bi-arrow-left-circle fs-2"></i>
+          <!-- <i class="bi-arrow-left-circle fs-2"></i> -->
+          <i class="fa-solid fa-chevron-left fs-2"></i>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <i class="bi-arrow-right-circle fs-2"></i>
+          <!-- <i class="bi-arrow-right-circle fs-2"></i> -->
+          <i class="fa-solid fa-chevron-right fs-2"></i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -101,7 +103,7 @@
                 <p class="card-text text-black">Familiar and at the same time mysterious, inspired by parietal art from the dawn of our ancestors.</p>
 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 14.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -122,7 +124,7 @@
                 <p class="card-text text-black">If you can&apos;t have a midnight snack why do we have a light in the fridge? Go eat &apos;em snacks now!</p>
 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 18.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -143,7 +145,7 @@
                 <p class="card-text text-black">An infinite number of possibilities, boundless, more significant than all of us. To infinity and beyond!</p>
 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 24.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -164,7 +166,7 @@
                 <p class="card-text text-black">&quot;On January 24th, Apple Computer will introduce Macintosh. And you&apos;ll see why 1984 won&apos;t be like 1984.&quot;</p>
 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 10.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -195,7 +197,7 @@
                 <p class="card-text text-black">Capillary waves are common in nature and are often referred to as ripples. This could be the new wave of light.</p>
                 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 10.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -216,7 +218,7 @@
                 <p class="card-text text-black">Carrying the same and different types of legacy in our bodies is a truly amazing thing that could happen to us.</p>
                 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 14.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -237,7 +239,7 @@
                 <p class="card-text text-black">Inspired by the combination of 90s gangster rap and chill vibes of summer waves, guess it was a good day after all.</p>
                 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 6.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
@@ -258,7 +260,7 @@
                 <p class="card-text text-black">Hiroyuki is mostly known for his abstract arts, so we are surprised to see something new like this!</p>
                 
                 <div class="d-flex justify-content-between align-items-center additional-information-block mt-3 rounded-3 px-4 py-2">
-                  <p class="fw-bold text-black ">Price&colon; 30&#36;</p>
+                  <p class="fw-bold text-black ">Price&colon; 24.99&#36;</p>
                   <button type="button" class="d-flex justify-content-center align-items-center btn-add-to-cart" id="toastButton" onclick="Toasty()">
                     <i class="fa-solid fa-cart-shopping fs-4 text-white"></i>
                   </button>
