@@ -154,6 +154,7 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    z-index: 4;
 }
 #cart:hover{
     transform: scale(1.05);
