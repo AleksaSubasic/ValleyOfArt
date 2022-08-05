@@ -148,14 +148,20 @@ body{
     cursor: pointer;
 }
 #cart{
-    position: relative;
-    margin: 50px 20px 0 auto;
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 #cart:hover{
     transform: scale(1.05);
+}
+#cart p{
+    position: absolute;
+    top: -3px;
+    right: 3px;
 }
 #cart-item-counter{
     width: 30px;
@@ -165,11 +171,6 @@ body{
     left: 37px;
     top: -7px;
     opacity: 60%;
-}
-#cart p{
-    position: absolute;
-    top: -3px;
-    right: 3px;
 }
 .modal-image{
     width: 85%;
