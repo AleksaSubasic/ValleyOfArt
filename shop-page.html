@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <!-- Favicon -->
+    <link rel = "shortcut icon" href = "assets/img/Logo-VoA.png"/>
     <title>VoA - Shop</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <!-- Nav -->
         <nav class="fixed-top navbar navbar-expand-lg my-nav-class bg-white container">
             <div class="container-fluid">
-                <div class="test-square"></div>
+              <div id="logo-image"></div>
                 <a class="navbar-brand my-text-color" href="index.html">Valley of Art</a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -318,10 +320,10 @@
       </div>
       <!-- Cart -->
       <div class="container">
-        <div id="cart" class="bg-green-cyan d-flex justify-content-center align-items-center shadow" data-bs-toggle="modal" data-bs-target="#formModal">
+        <div id="cart" class="position-fixed bg-green-cyan d-flex justify-content-center align-items-center shadow" data-bs-toggle="modal" data-bs-target="#formModal">
           <i class="fa-solid fa-cart-shopping fs-4 text-white text-center"></i>
-          <div id="cart-item-counter" class="bg-green-dark"></div>
-          <p class="text-white fw-bold">2</p>
+          <div id="cart-item-counter" class="position-absolute bg-green-dark"></div>
+          <p class="position-absolute text-white fw-bold">2</p>
         </div>
       </div>
     </main>
@@ -335,7 +337,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="/action_page.php" method="post">
               <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Name:</label>
                 <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
@@ -562,13 +564,12 @@
     </div>
 
     <!-- Toast -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="toastNotification" class="toast align-items-center shadow-sm" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="d-flex align-items-center justify-content-between bg-green-cyan rounded-4">
-          <div class="toast-body text-white">
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x mb-3">
+      <div id="toastNotification" class="toast align-items-center shadow-sm my-rounded" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center justify-content-between bg-white my-rounded shadow">
+          <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center">
             Successfuly added to cart!
           </div>
-          <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
       </div>
     </div>

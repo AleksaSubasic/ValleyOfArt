@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css"/>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel = "shortcut icon" href = "assets/img/Logo-VoA.png"/>
     <title>VoA - Home</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
         <!-- Nav -->
         <nav class="fixed-top navbar navbar-expand-lg my-nav-class bg-white container">
             <div class="container-fluid">
-                <div class="test-square"></div>
+                <div id="logo-image"></div>
                 <a class="navbar-brand my-text-color" href="index.html">Valley of Art</a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -82,7 +84,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-        
       <!-- Top selling art block -->
       <div class="container">
         <div class="text-center text-white bg-green-cyan my-5 py-2">
@@ -176,7 +177,6 @@
           </div>
         </div>
       </div>
-
       <!-- Trending this week block -->
       <div class="container">
         <div class="text-center text-white bg-green-cyan my-5 py-2 lower-margin">
@@ -403,13 +403,12 @@
     </div>
 
     <!-- Toast -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="toastNotification" class="toast align-items-center shadow-sm" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="d-flex align-items-center justify-content-between bg-green-cyan rounded-4">
-          <div class="toast-body text-white">
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x mb-3">
+      <div id="toastNotification" class="toast align-items-center shadow-sm my-rounded" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center justify-content-between bg-white my-rounded shadow">
+          <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center">
             Successfuly added to cart!
           </div>
-          <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
       </div>
     </div>

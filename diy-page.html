@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <!-- Favicon -->
+    <link rel = "shortcut icon" href = "assets/img/Logo-VoA.png"/>
     <title>VoA - DIY</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <!-- Nav -->
         <nav class="fixed-top navbar navbar-expand-lg my-nav-class bg-white container">
             <div class="container-fluid">
-                <div class="test-square"></div>
+              <div id="logo-image"></div>
                 <a class="navbar-brand my-text-color" href="index.html">Valley of Art</a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,51 +40,77 @@
 
     <main>
       <div class="container">
-        <div id="canvas" class="d-flex">
-          <div id="left-side" class="d-flex justify-content-center flex-wrap">
-            <div id="close" class="pt-5">
-              <button class="btn bg-white-shadow shadow-sm dropdown-toggle text-capitalize" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                Choose material
-              </button>
-              <ul class="dropdown-menu dropdown-menu-center">
-                <li><a class="dropdown-item" href="#">Poster</a></li>
-                <li><a class="dropdown-item" href="#">Canvas print</a></li>
-                <li><a class="dropdown-item" href="#">Wood wall art</a></li>
-                <li><a class="dropdown-item" href="#">Wall art sets</a></li>
-                <li><a class="dropdown-item disabled" href="#">Acrylic wall art</a></li>
-                <li><h6 class="dropdown-header">Unavailable</h6></li>
-                <li><a class="dropdown-item disabled" href="#">Metal art</a></li>
-                <li><h6 class="dropdown-header">Unavailable</h6></li>
-                <li><a class="dropdown-item" href="#">Photo prints</a></li>
-              </ul>
-            </div>
-            <div>
-              <button type="button" class="btn bg-white-shadow shadow-sm text-capitalize">Upload photo</button>
-            </div>
-            <div id="color-picker-block" class="shadow-sm">
-              <p class="text-center pt-2 text-capitalize">Pick a color&colon;</p>
-              <div id="color-picker" class="d-flex justify-content-evenly mx-auto mt-2 p-2 shadow-sm"></div>
-              <div class="color-swatch-block d-flex justify-content-between mx-auto pt-3">
-                <div class="color-swatch bg-tropical color-swatch-active"></div>
-                <div class="color-swatch bg-yellow"></div>
-                <div class="color-swatch bg-orange"></div>
-                <div class="color-swatch bg-red"></div>
+        <div id="canvas" class="bg-white d-flex">
+          <div id="left-side" class="position-relative d-flex justify-content-center">
+
+            <form class="d-flex justify-content-center align-items-center flex-wrap" form action="/action_page.php" method="post">
+
+              <div class="pt-3">
+                <button class="btn bg-white-shadow shadow-sm dropdown-toggle text-capitalize" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                  Choose material
+                </button>
+                <ul class="dropdown-menu dropdown-menu-center">
+                  <li><a class="dropdown-item" href="#">Poster</a></li>
+                  <li><a class="dropdown-item" href="#">Canvas print</a></li>
+                  <li><a class="dropdown-item" href="#">Wood wall art</a></li>
+                  <li><a class="dropdown-item" href="#">Wall art sets</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Acrylic wall art</a></li>
+                  <li><h6 class="dropdown-header">Unavailable</h6></li>
+                  <li><a class="dropdown-item disabled" href="#">Metal art</a></li>
+                  <li><h6 class="dropdown-header">Unavailable</h6></li>
+                  <li><a class="dropdown-item" href="#">Photo prints</a></li>
+                </ul>
               </div>
-              <div class="color-swatch-block d-flex justify-content-between mx-auto pt-4">
-                <div class="color-swatch bg-white"></div>
-                <div class="color-swatch bg-black"></div>
-                <div class="color-swatch bg-blue"></div>
-                <div class="color-swatch bg-purple"></div>
+
+              <div>
+                <label for="inputFile" class="btn bg-white-shadow shadow-sm text-capitalize">
+                  Upload photo
+                  <input id="inputFile" type="file" class="form-control"/>
+                </label>
               </div>
-            </div>
-            <div class="d-flex align-items-end mb-3">
-              <button type="button" class="btn bg-white-shadow shadow-sm text-capitalize">Send to us!</button>
-            </div>
+
+              <div id="color-picker-block" class="bg-white shadow-sm">
+                <p class="text-center pt-2 text-capitalize">Pick a color&colon;</p>
+                <div id="color-picker" class="d-flex justify-content-evenly mx-auto mt-2 p-2 shadow-sm"></div>
+                <div class="color-swatch-block d-flex justify-content-between mx-auto pt-3">
+                  <div class="color-swatch bg-tropical color-swatch-active"></div>
+                  <div class="color-swatch bg-yellow"></div>
+                  <div class="color-swatch bg-orange"></div>
+                  <div class="color-swatch bg-red"></div>
+                </div>
+                <div class="color-swatch-block d-flex justify-content-between mx-auto pt-4">
+                  <div class="color-swatch bg-white"></div>
+                  <div class="color-swatch bg-black"></div>
+                  <div class="color-swatch bg-blue"></div>
+                  <div class="color-swatch bg-purple"></div>
+                </div>
+              </div>
+
+              <div class="mb-3" id="toastButton" onclick="Toasty()">
+                <button type="button" class="btn bg-white-shadow shadow-sm text-capitalize">Send to us!</button>
+              </div>
+
+            </form>
+
           </div>
-          <h3 class="m-auto opacity-50">Make your own art right here!</h3>
+
+          <div id="right-side" class=" d-flex justify-content-center"> 
+            <h3 class="m-auto opacity-50">Make your own art right here!</h3>
+          </div>
         </div>
       </div>
     </main>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x mb-3">
+      <div id="toastNotification" class="toast align-items-center shadow-sm my-rounded" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center justify-content-between bg-white my-rounded shadow">
+          <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center">
+            Successfuly sent!
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-green-cyan text-center mt-5">
         <div class="container p-4 pb-0">
