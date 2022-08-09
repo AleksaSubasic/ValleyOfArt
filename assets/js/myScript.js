@@ -8,3 +8,11 @@ function Toasty(){
     let toastElement =  new bootstrap.Toast(getToastHtmlElement, option);
     toastElement.show();
 }
+
+function ToastyPay(){
+    let getToastHtmlElement = document.getElementById("toastNotificationPay");
+    let toastElement =  new bootstrap.Toast(getToastHtmlElement, option);
+    toastElement.show();
+}
+
+
