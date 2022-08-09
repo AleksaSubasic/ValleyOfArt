@@ -339,20 +339,20 @@
           <div class="modal-body">
             <form action="/action_page.php" method="post">
               <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Name:</label>
+                <label for="exampleInputName" class="form-label">Name&colon;</label>
                 <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
               </div>
               <div class="mb-3">
-                <label for="inputEmail" class="form-label">Email:</label>
+                <label for="inputEmail" class="form-label">Email&colon;</label>
                 <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com">
               </div>
               <div class="mb-3">
-                <label for="inputAddress" class="form-label">Address:</label>
+                <label for="inputAddress" class="form-label">Address&colon;</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
               </div>
               <div class="mb-3">
-                <label for="inputPhoneNumber" class="form-label">Phone number:</label>
-                <input type="number" class="form-control" id="inputPhoneNumber" placeholder="381xxx">
+                <label for="inputPhoneNumber" class="form-label">Phone number&colon;</label>
+                <input type="number" class="form-control" id="inputPhoneNumber" placeholder="+381xxx">
               </div>
               <div>
                 <h6>Items in cart:</h6>
@@ -365,7 +365,7 @@
             </form>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal">Pay</button>
+            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal" id="toastButton" onclick="ToastyPay()">Pay</button>
           </div>
         </div>
       </div>
@@ -569,6 +569,16 @@
         <div class="d-flex align-items-center justify-content-between bg-white my-rounded shadow">
           <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center">
             Successfuly added to cart!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x mb-3">
+      <div id="toastNotificationPay" class="toast align-items-center shadow-sm my-rounded" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center justify-content-between bg-white my-rounded shadow">
+          <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center">
+            Purchased successfuly!
           </div>
         </div>
       </div>
