@@ -70,25 +70,25 @@
       <div class="container">
         <div id="form-block" class="w-50">
           <h2 class="text-white text-center">Contact Us!</h2>
-          <form>
+          <form action="/action_page.php" method="post">
             <div class="mb-3">
-              <label for="exampleInputName" class="form-label">Name&colon;</label>
-              <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
+              <label for="validationDefault01" class="form-label">Name&colon;</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="John Don" required>
             </div>
             <div class="mb-3">
-              <label for="inputEmail" class="form-label">Email&colon;</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com">
+              <label for="validationDefault02" class="form-label">Email&colon;</label>
+              <input type="email" class="form-control" id="validationDefault02" placeholder="john.don@gmail.com" required>
             </div>
             <div class="mb-3">
-              <label for="inputAddress" class="form-label">Address&colon;</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <label for="validationDefault03" class="form-label">Address&colon;</label>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="1234 Main St" required>
             </div>
             <div class="mb-3">
-              <label for="inputPhoneNumber" class="form-label">Phone number&colon;</label>
-              <input type="number" class="form-control" id="inputPhoneNumber" placeholder="+381xxx">
+              <label for="validationDefault04" class="form-label">Phone number&colon;</label>
+              <input type="number" class="form-control" id="validationDefault04" placeholder="+381xxx" required>
             </div>
             <div class="mb-3 text-center">
-              <input type="button" class="btn w-50 fs-5 form-control text-white bg-green-cyan" value="Send!"/>
+              <input type="submit" class="btn w-50 fs-5 form-control text-white bg-green-cyan" value="Send!"/>
             </div>
           </form>
         </div>
@@ -123,8 +123,9 @@
         </div>
     
         <!-- Copyright -->
-        <div class="text-center text-white p-3 copyright bg-green-dark">
+        <div class="text-center text-white p-3 copyright bg-green-dark d-flex justify-content-center align-items-center">
           <h5>Copyright &copy; Aleksa Subasic 98&sol;20</h5>
+          <a href="https://aleksasubasic.github.io/portfolio/" target="_blank" class="text-white">My Portfolio</a>
         </div>
     </footer>
 

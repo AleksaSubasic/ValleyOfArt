@@ -340,19 +340,19 @@
             <form action="/action_page.php" method="post">
               <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Name&colon;</label>
-                <input type="text" class="form-control" id="exampleInputName" placeholder="John Don">
+                <input type="text" class="form-control" id="exampleInputName" placeholder="John Don" required>
               </div>
               <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email&colon;</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com">
+                <input type="email" class="form-control" id="inputEmail" placeholder="john.don@gmail.com" required>
               </div>
               <div class="mb-3">
                 <label for="inputAddress" class="form-label">Address&colon;</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
               </div>
               <div class="mb-3">
                 <label for="inputPhoneNumber" class="form-label">Phone number&colon;</label>
-                <input type="number" class="form-control" id="inputPhoneNumber" placeholder="+381xxx">
+                <input type="number" class="form-control" id="inputPhoneNumber" placeholder="+381xxx" required>
               </div>
               <div>
                 <h6>Items in cart:</h6>
@@ -365,7 +365,7 @@
             </form>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal" id="toastButton" onclick="ToastyPay()">Pay</button>
+            <button type="submit" class="btn fs-5 w-75 text-white bg-green-cyan" data-bs-dismiss="modal" id="toastButton" onclick="ToastyPay()">Pay</button>
           </div>
         </div>
       </div>
@@ -611,8 +611,9 @@
         </div>
     
         <!-- Copyright -->
-        <div class="text-center text-white p-3 copyright bg-green-dark">
+        <div class="text-center text-white p-3 copyright bg-green-dark d-flex justify-content-center align-items-center">
           <h5>Copyright &copy; Aleksa Subasic 98&sol;20</h5>
+          <a href="https://aleksasubasic.github.io/portfolio/" target="_blank" class="text-white">My Portfolio</a>
         </div>
     </footer>
 
