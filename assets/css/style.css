@@ -57,13 +57,13 @@ body{
 .my-nav-class, .container .bg-green-cyan, .modal-content, #about-company .container .bg-green-dark, .bg-cambridge, .bg-white-shadow, #canvas, #left-side, .dropdown-menu, #color-picker-block, #color-picker, #about-bckg-jpg h1, #form-block{
     border-radius: 20px;
 }
-.my-rounded, .card, .card-body .bg-green-cyan, .toast, .toast .bg-green-cyan, .modal .modal-dialog .modal-content .modal-body .modal-image, #about-company .container h5{
+.my-rounded, .card, .card-body .bg-green-cyan, .toast, .toast .bg-green-cyan, .modal .modal-dialog .modal-content .modal-body .modal-image, #about-company .container h5, footer .copyright a{
     border-radius: 10px;
 }
 .my-nav-class ul li a:hover, .my-text-color:hover{
     color: var(--cambridge-blue);
 }
-.my-nav-class, .my-text-color, .my-nav-class ul li a, .my-nav-class ul li a:after, .card-img-top, #cart, .bg-cambridge, .bg-white-shadow, #left-side{
+.my-nav-class, .my-text-color, .my-nav-class ul li a, .my-nav-class ul li a:after, .card-img-top, #cart, .bg-cambridge, .bg-white-shadow, #left-side, footer .copyright a{
     transition: 0.4s;
 }
 .hover-for-more:hover .card-img-top, .card-img-top:hover, #cart:hover{
@@ -286,5 +286,26 @@ footer{
 }
 footer .copyright h5{
     margin-bottom: 0px;
+}
+footer .copyright h5::after{
+    content: '';
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 3px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: var(--white);
+    margin-left: 12px;
+}
+footer .copyright a{
+    margin-left: 12px;
+    padding: 2px 5px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border: 2px solid var(--white);
+}
+footer .copyright a:hover{
+    background-color: var(--brunswick-green);
 }
 /* --- FOOTER END --- */

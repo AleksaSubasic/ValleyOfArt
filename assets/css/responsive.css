@@ -50,6 +50,30 @@
         background-size: 250%;
     }
 }
+@media screen and (max-width: 577px) {
+    footer .copyright{
+        flex-direction: column;
+    }
+    footer .copyright h5{
+        padding-right: 0px;
+        padding-bottom: 10px;
+        border-right: none;
+    }
+    footer .copyright h5::after{
+        content: '';
+        display: block;
+        width: 90px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: white;
+        margin: auto;
+        margin-top: 7px;
+    }
+    footer .copyright a{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
 @media screen and (max-width: 520px) {
     h1{
         font-size: 3rem;
