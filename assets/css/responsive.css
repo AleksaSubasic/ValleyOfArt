@@ -17,11 +17,6 @@
     }
     
 }
-@media screen and (max-width: 770px) {
-    #canvas{
-        display: none !important;
-    }
-}
 @media screen and (max-width: 992px) {
     a, p, .my-nav-link{
         font-size: 1.10rem;
@@ -40,6 +35,14 @@
     }
     #about-company .container h5, #form-block{
         width: 100% !important;
+    }
+}
+@media screen and (max-width: 760px) {
+    #canvas{
+        display: none !important;
+    }
+    #messageForMobile{
+        display: flex;
     }
 }
 @media screen and (max-width: 600px) {
