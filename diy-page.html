@@ -45,33 +45,22 @@
       <div class="container">
         <div id="canvas" class="bg-white d-flex">
           <div id="left-side" class="position-relative d-flex justify-content-center">
-
             <form class="d-flex justify-content-center align-items-center flex-wrap" form action="/action_page.php" method="post">
-
               <div class="pt-3">
-                <button class="btn bg-white-shadow shadow-sm dropdown-toggle text-capitalize" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                  Choose material
-                </button>
-                <ul class="dropdown-menu dropdown-menu-center">
-                  <li><a class="dropdown-item" href="#">Poster</a></li>
-                  <li><a class="dropdown-item" href="#">Canvas print</a></li>
-                  <li><a class="dropdown-item" href="#">Wood wall art</a></li>
-                  <li><a class="dropdown-item" href="#">Wall art sets</a></li>
-                  <li><a class="dropdown-item disabled" href="#">Acrylic wall art</a></li>
-                  <li><h6 class="dropdown-header">Unavailable</h6></li>
-                  <li><a class="dropdown-item disabled" href="#">Metal art</a></li>
-                  <li><h6 class="dropdown-header">Unavailable</h6></li>
-                  <li><a class="dropdown-item" href="#">Photo prints</a></li>
-                </ul>
+                <select class="form-select btn bg-white-shadow shadow-sm" aria-label="Default select example">
+                  <option class="text-capitalize" value="Art Type" selected>Art type</option>
+                  <option class="text-capitalize" value="Poster">Poster</option>
+                  <option class="text-capitalize" value="Canvas print">Canvas print</option>
+                  <option class="text-capitalize" value="Wood wall art">Wood wall art</option>
+                  <option class="text-capitalize" value="Wall art sets">Wall art sets</option>
+                  <option class="text-capitalize" value="Acrylic wall art">Acrylic wall art</option>
+                  <option class="text-capitalize" value="Metal art">Metal art</option>
+                  <option class="text-capitalize" value="Photo print">Photo print</option>
+                </select>
               </div>
-
               <div>
-                <label for="inputFile" class="btn bg-white-shadow shadow-sm text-capitalize">
-                  Upload photo
-                  <input id="inputFile" type="file" class="form-control"/>
-                </label>
+                <label for="inputFile" class="btn bg-white-shadow shadow-sm text-capitalize">Upload photo<input id="inputFile" type="file" class="form-control"/></label>
               </div>
-
               <div id="color-picker-block" class="bg-white shadow-sm">
                 <p class="text-center pt-2 text-capitalize">Pick a color&colon;</p>
                 <div id="color-picker" class="mx-auto mt-2 p-2 shadow-sm"></div>
@@ -88,15 +77,11 @@
                   <div class="color-swatch bg-purple" onclick="setColor(this)"></div>
                 </div>
               </div>
-
               <div class="mb-3" id="toastButton" onclick="Toasty()">
                 <button type="button" class="btn bg-white-shadow shadow-sm text-capitalize">Send to us!</button>
               </div>
-
             </form>
-
           </div>
-
           <div id="right-side" class=" d-flex justify-content-center"> 
             <h3 class="m-auto opacity-50">Make your own art right here!</h3>
           </div>
@@ -114,9 +99,7 @@
     <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x mb-3">
       <div id="toastNotification" class="toast align-items-center shadow-sm my-rounded" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex align-items-center justify-content-between bg-white my-rounded shadow">
-          <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center">
-            Successfuly sent!
-          </div>
+          <div class="w-100 fs-5 toast-body text-black d-flex justify-content-center"> Successfuly sent! </div>
         </div>
       </div>
     </div>
