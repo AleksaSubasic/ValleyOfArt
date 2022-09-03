@@ -57,7 +57,7 @@ body{
 .my-nav-class, .container .bg-green-cyan, .modal-content, #about-company .container .bg-green-dark, .bg-cambridge, .bg-white-shadow, #canvas, #left-side, .dropdown-menu, #color-picker-block, #color-picker, #messageForMobileText, #about-bckg-jpg h1, #form-block{
     border-radius: 20px;
 }
-.my-rounded, .card, .card-body .bg-green-cyan, .toast, .toast .bg-green-cyan, .modal .modal-dialog .modal-content .modal-body .modal-image, #about-company .container h5, footer .copyright a{
+.my-rounded, .card, .card-body .bg-green-cyan, .toast, .toast .bg-green-cyan, .modal .modal-dialog .modal-content .modal-body .modal-image, #about-company .container h5{
     border-radius: 10px;
 }
 .my-nav-class ul li a:hover, .my-text-color:hover{
@@ -298,11 +298,14 @@ footer .copyright h5::after{
     background-color: var(--white);
     margin-left: 12px;
 }
+footer .container section a, footer .copyright a{
+    border: 2px solid var(--white);
+    border-radius: 0.4em;
+}
 footer .copyright a{
     margin-left: 12px;
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
     text-decoration: none;
-    border: 2px solid var(--white);
 }
 footer .copyright a:hover{
     background-color: var(--brunswick-green);
