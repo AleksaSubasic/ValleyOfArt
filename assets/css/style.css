@@ -250,14 +250,6 @@ body{
     color: white;
 }
 
-
-
-
-
-
-
-
-
 /* COLOR SWATCH CLASSES */
 .bg-tropical, #color-picker{
     background-color: var(--tropical-rain-forest);
@@ -308,8 +300,7 @@ footer .copyright h5::after{
 }
 footer .copyright a{
     margin-left: 12px;
-    padding: 2px 5px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-decoration: none;
     border: 2px solid var(--white);
 }
