@@ -184,7 +184,7 @@ body{
     border-bottom-right-radius: 0px;
     border-right: 3px solid var(--green-cyan);
 }
-#left-side button, #left-side label, #color-picker-block{
+#left-side button, #left-side label, #color-picker-block, #left-side select{
     width: 190px;
 }
 #left-side form input[type="file"]{
