@@ -48,7 +48,7 @@ body{
 .carousel-item img, #about-background-image{
     width: 100%;
 }
-.carousel, .carousel-item, .carousel-item img, #about-background-image, #about-bckg-jpg{
+.carousel, .carousel-item, .carousel-item img, #about-background-image, #about-bckg-jpg, #messageForMobile{
     height: 100vh;
 }
 #logo-image, #cart, #cart-item-counter, .btn-add-to-cart, .color-swatch{
@@ -229,7 +229,6 @@ body{
 }
 #messageForMobile{
     display: none;
-    height: 100vh;
 }
 #messageForMobileText{
     background-color: var(--white);
@@ -304,7 +303,6 @@ footer .container section a, footer .copyright a{
 }
 footer .copyright a{
     margin-left: 12px;
-    /* font-size: 1.15rem; */
     text-decoration: none;
 }
 footer .copyright a:hover{
